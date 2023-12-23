@@ -178,7 +178,7 @@ header .container nav .list-icon {
         border-style: solid;
         border-color: transparent transparent rgb(0, 0, 0, .2) transparent;
         border-width: 16px;
-        top: 12px;
+        top: 9px;
         right: -4px;
         z-index: 5;
     }
@@ -203,7 +203,7 @@ header .container nav .list-icon {
     }
 
     header .container nav .right-links {
-        top: 314%;
+        top: 313%;
         border-bottom-left-radius: .75rem;
         border-bottom-right-radius: .75rem;
 
@@ -213,7 +213,7 @@ header .container nav .list-icon {
     header .container nav .left-links li {
         padding: 1.19rem;
         width: 100%;
-        border-bottom: 1px solid #ddd;
+        border-bottom: 1px solid #f70d0d;
     }
 
     header .container nav ul li:hover {
