@@ -1,0 +1,230 @@
+/* Start Variables */
+
+:root {
+    --parag-color: #777;
+    --bg-color: #080D27;
+    --text-color: #98B269;
+    --btn-color: #2F3CF4;
+    --white-color: #fff;
+}
+
+/* End Variables */
+
+/* Start Global Rules */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--bg-color);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Small */
+@media (min-width:768px) {
+    .container {
+        width: 750px;
+    }
+
+    html {
+        font-size: 65%;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1170px;
+    }
+
+    html {
+        font-size: 99%;
+    }
+}
+
+/* End Global Rules */
+
+/* Start Header */
+header {
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+}
+
+header .container {
+    position: relative;
+}
+
+header .container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white-color);
+    gap: 1rem;
+}
+
+header .container nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    font-weight: 600;
+    flex: 1;
+    padding: .75rem 2rem;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+@media (max-width: 767px) {
+    header .container nav ul {
+        font-size: 50%;
+        padding: unset;
+        display: none;
+    }
+}
+
+header .container nav ul::before {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .container nav ul li:hover {
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 1.25rem;
+    transition: .5s;
+}
+
+header .container nav .logo {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding: .5rem 4rem;
+    color: white;
+}
+
+@media (max-width: 767px) {
+    header .container nav .logo {
+        order: -1;
+        padding-left: 0;
+    }
+}
+
+header .container nav .logo img {
+    width: 40px;
+}
+
+
+header .container nav .list-icon {
+    display: none;
+}
+
+/* Start Responsive Nav */
+@media (max-width: 767px) {
+    header .container nav .list-icon {
+        display: block;
+        font-size: 1.65rem;
+        cursor: pointer;
+        position: relative;
+    }
+
+    header .container nav .list-icon:hover::after {
+        content: "";
+        position: absolute;
+        border-style: solid;
+        border-color: transparent transparent rgb(0, 0, 0, .4) transparent;
+        border-width: 16px;
+        top: 11px;
+        right: -4px;
+        z-index: 5;
+    }
+
+    header .container nav .list-icon:hover~ul {
+        display: block;
+        position: absolute;
+        padding: 0;
+        font-size: 1.1rem;
+        max-width: 92%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, .4);
+        z-index: 5;
+        right: 12px;
+    }
+
+    header .container nav .left-links {
+        top: 100%;
+        border-top-left-radius: 1rem;
+    }
+
+    header .container nav .right-links {
+        top: 291%;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+    }
+
+    header .container nav .right-links li,
+    header .container nav .left-links li {
+        padding: 1.19rem;
+        width: 100%;
+        border-bottom: 1px solid #ddd;
+    }
+
+    header .container nav ul li:hover {
+        padding-left: 35px;
+        transition: 1s;
+        text-decoration: none;
+    }
+
+    header .container nav .right-links li:last-child {
+        border-bottom: 0;
+    }
+
+    header .container nav ul::before {
+        display: none;
+    }
+}
+
+/* End Responsive Nav */
+/* End Header */
