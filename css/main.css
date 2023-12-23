@@ -25,6 +25,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--bg-color);
+    background-color: white;
 }
 
 ul {
