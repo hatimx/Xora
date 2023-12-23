@@ -148,6 +148,8 @@ header .container nav .logo {
     header .container nav .logo {
         order: -1;
         padding-left: 0;
+        font-size: 1.8rem;
+
     }
 }
 
@@ -173,9 +175,9 @@ header .container nav .list-icon {
         content: "";
         position: absolute;
         border-style: solid;
-        border-color: transparent transparent rgb(0, 0, 0, .4) transparent;
+        border-color: transparent transparent rgb(0, 0, 0, .2) transparent;
         border-width: 16px;
-        top: 11px;
+        top: 12px;
         right: -4px;
         z-index: 5;
     }
@@ -185,22 +187,24 @@ header .container nav .list-icon {
         position: absolute;
         padding: 0;
         font-size: 1.1rem;
-        max-width: 92%;
+        max-width: 100%;
         width: 100%;
-        background-color: rgb(0, 0, 0, .4);
+        background-color: rgb(0, 0, 0, .2);
         z-index: 5;
         right: 12px;
+        left: 0;
     }
 
     header .container nav .left-links {
         top: 100%;
-        border-top-left-radius: 1rem;
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
     }
 
     header .container nav .right-links {
-        top: 291%;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
+        top: 314%;
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
 
     }
 
