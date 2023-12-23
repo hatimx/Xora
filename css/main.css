@@ -25,7 +25,7 @@ html {
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: var(--bg-color);
-    background-color: white;
+    /* background-color: white; */
 }
 
 ul {
@@ -213,7 +213,7 @@ header .container nav .list-icon {
     header .container nav .left-links li {
         padding: 1.19rem;
         width: 100%;
-        border-bottom: 1px solid #f70d0d;
+        border-bottom: 1px solid var(--white-color);
     }
 
     header .container nav ul li:hover {
