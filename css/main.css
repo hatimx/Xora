@@ -50,7 +50,7 @@ a {
     }
 
     html {
-        font-size: 65%;
+        font-size: 45%;
     }
 }
 
@@ -58,6 +58,10 @@ a {
 @media (min-width:992px) {
     .container {
         width: 970px;
+    }
+
+    html {
+        font-size: 65%;
     }
 }
 
