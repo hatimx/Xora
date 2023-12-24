@@ -319,9 +319,15 @@ header .container nav .list-icon {
     width: fit-content;
     padding: 1rem 2.5rem;
     border-radius: .5rem;
-    transition: .5s ease;
+    transition: .5s;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+    box-shadow: 0 0px 55px rgba(255, 255, 255, 0.20);
+}
+
+.main .container .text a:hover {
+    box-shadow: 0 0px 55px rgba(255, 255, 255, 0.45);
+
 }
 
 @media (max-width:767px) {
@@ -337,9 +343,7 @@ header .container nav .list-icon {
     }
 }
 
-.main .container .text a:hover {
-    background: linear-gradient(120deg, #18276478, #2f3cf483);
-}
+
 
 .main .container .text a i {
     margin-right: 1.5rem;
