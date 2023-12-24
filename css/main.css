@@ -154,6 +154,7 @@ header .container nav .logo {
     header .container nav .logo {
         order: -1;
         padding-left: 0;
+        padding-right: 0;
         font-size: 1.8rem;
         margin: 0;
     }
@@ -181,7 +182,7 @@ header .container nav .list-icon {
         content: "";
         position: absolute;
         border-style: solid;
-        border-color: transparent transparent rgb(0, 0, 0, .2) transparent;
+        border-color: transparent transparent rgb(0, 0, 0, .5) transparent;
         border-width: 16px;
         top: 9px;
         right: -4px;
@@ -195,7 +196,7 @@ header .container nav .list-icon {
         font-size: 1.1rem;
         max-width: 100%;
         width: 100%;
-        background-color: rgb(0, 0, 0, .2);
+        background-color: rgb(0, 0, 0, .5);
         z-index: 5;
         right: 12px;
         left: 0;
@@ -264,7 +265,7 @@ header .container nav .list-icon {
 
 @media (min-width:768px) {
     .main .container {
-        margin-top: 10rem;
+        padding-top: 8rem;
     }
 }
 
@@ -290,7 +291,7 @@ header .container nav .list-icon {
 
 @media (max-width:767px) {
     .main .container .text h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 
