@@ -1,11 +1,12 @@
 /* Start Variables */
 
 :root {
-    --parag-color: #777;
+    --parag-color: #A0A6CD;
     --bg-color: #080D27;
     --text-color: #98B269;
     --btn-color: #2F3CF4;
     --white-color: #fff;
+    --section-padding: 100px;
 }
 
 /* End Variables */
@@ -24,8 +25,6 @@ html {
 
 body {
     font-family: 'Open Sans', sans-serif;
-    background-color: var(--bg-color);
-    /* background-color: white; */
 }
 
 ul {
@@ -47,10 +46,11 @@ a {
 @media (min-width:768px) {
     .container {
         width: 750px;
+
     }
 
     html {
-        font-size: 40%;
+        font-size: 55%;
     }
 }
 
@@ -106,7 +106,7 @@ header .container nav ul {
     font-size: 1.1rem;
     font-weight: 600;
     flex: 1;
-    padding: .75rem 2rem;
+    padding: .75rem 0;
     text-transform: uppercase;
     position: relative;
 
@@ -237,3 +237,98 @@ header .container nav .list-icon {
 
 /* End Responsive Nav */
 /* End Header */
+
+/* Start Main */
+.main {
+    padding-top: var(--section-padding);
+    padding-bottom: 50px;
+    height: 100vh;
+    background: linear-gradient(140deg, var(--bg-color), #101A4F);
+}
+
+.main .container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+@media (max-width:767px) {
+    .main .container {
+        flex-direction: column;
+    }
+}
+
+.main .container .text {
+    flex: 1;
+    width: 100%;
+}
+
+.main .container .text strong {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+}
+
+.main .container .text h1 {
+    font-size: 5.5rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: var(--white-color);
+    line-height: 1.2;
+    margin: 0 0 2rem;
+}
+
+.main .container .text p {
+    font-size: .975rem;
+    color: #A0A6CD;
+    line-height: 2;
+    width: 550px;
+    max-width: 100%;
+}
+
+.main .container .text a {}
+
+.main .container .text a i {}
+
+.main .container .side-image {
+    flex: 1;
+    text-align: center;
+}
+
+@media (max-width:767px) {
+    .main .container .side-image {
+        order: -1;
+    }
+}
+
+.main .container .side-image img {
+    width: 100%;
+    /* background: linear-gradient(140deg, #101b4f1b, #101b4f1b); */
+
+    transition: .5s;
+    animation: brighten 2.5s linear 1;
+}
+
+.main .container .side-image:hover img {}
+
+@keyframes brighten {
+    0% {
+        opacity: .3;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:767px) {
+    .main .container .side-image img {
+        max-width: 320px;
+        width: 100%;
+    }
+}
+
+/* End Main */
