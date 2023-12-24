@@ -164,7 +164,6 @@ header .container nav ul {
     padding: .75rem 0;
     text-transform: uppercase;
     position: relative;
-
 }
 
 @media (max-width: 767px) {
@@ -192,6 +191,10 @@ header .container nav ul li:hover {
     cursor: pointer;
     font-size: 1.25rem;
     transition: .5s;
+}
+
+header .container nav ul li a {
+    color: var(--white-color);
 }
 
 header .container nav .logo {
