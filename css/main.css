@@ -358,11 +358,9 @@ header .container nav .list-icon {
     width: 100%;
     /* background: linear-gradient(140deg, #101b4f1b, #101b4f1b); */
 
-    transition: .5s;
-    animation: brighten 2.5s linear 1;
+    transition: .7s;
+    animation: brighten 2.7s linear 1;
 }
-
-.main .container .side-image:hover img {}
 
 @keyframes brighten {
     0% {
