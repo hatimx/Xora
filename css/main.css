@@ -224,8 +224,9 @@ header .container nav .list-icon {
 
     header .container nav ul li:hover {
         padding-left: 35px;
-        transition: 1s;
+        transition: .5s;
         text-decoration: none;
+        font-size: 1.15rem;
     }
 
     header .container nav .right-links li:last-child {
@@ -331,6 +332,7 @@ header .container nav .list-icon {
         margin-left: auto;
         margin-right: auto;
         padding: 1rem 2rem;
+        white-space: nowrap;
     }
 }
 
@@ -356,8 +358,6 @@ header .container nav .list-icon {
 
 .main .container .side-image img {
     width: 100%;
-    /* background: linear-gradient(140deg, #101b4f1b, #101b4f1b); */
-
     transition: .7s;
     animation: brighten 2.7s linear 1;
 }
@@ -374,7 +374,7 @@ header .container nav .list-icon {
 
 @media (max-width:767px) {
     .main .container .side-image img {
-        max-width: 320px;
+        max-width: 300px;
         width: 100%;
     }
 }
