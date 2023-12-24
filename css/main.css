@@ -72,7 +72,7 @@ a {
     }
 
     html {
-        font-size: 99%;
+        font-size: 85%;
     }
 }
 
@@ -146,6 +146,7 @@ header .container nav .logo {
     font-size: 2.5rem;
     font-weight: 800;
     padding: .5rem 4rem;
+    margin: 0 8rem;
     color: white;
 }
 
@@ -154,7 +155,7 @@ header .container nav .logo {
         order: -1;
         padding-left: 0;
         font-size: 1.8rem;
-
+        margin: 0;
     }
 }
 
@@ -241,8 +242,8 @@ header .container nav .list-icon {
 /* Start Main */
 .main {
     padding-top: var(--section-padding);
-    padding-bottom: 50px;
-    height: 100vh;
+    min-height: 100vh;
+    width: 100%;
     background: linear-gradient(140deg, var(--bg-color), #101A4F);
 }
 
@@ -257,12 +258,18 @@ header .container nav .list-icon {
 @media (max-width:767px) {
     .main .container {
         flex-direction: column;
+        margin-top: 0;
+    }
+}
+
+@media (min-width:768px) {
+    .main .container {
+        margin-top: 10rem;
     }
 }
 
 .main .container .text {
     flex: 1;
-    width: 100%;
 }
 
 .main .container .text strong {
@@ -281,17 +288,58 @@ header .container nav .list-icon {
     margin: 0 0 2rem;
 }
 
+@media (max-width:767px) {
+    .main .container .text h1 {
+        font-size: 2.5rem;
+    }
+}
+
 .main .container .text p {
     font-size: .975rem;
     color: #A0A6CD;
     line-height: 2;
-    width: 550px;
-    max-width: 100%;
+    max-width: 300px;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.main .container .text a {}
+@media (max-width:767px) {
+    .main .container .text p {
+        font-size: .75rem;
+    }
+}
 
-.main .container .text a i {}
+.main .container .text a {
+    display: block;
+    text-align: center;
+    color: var(--white-color);
+    background: linear-gradient(145deg, #182764, #2F3CF4);
+    width: fit-content;
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    transition: .5s ease;
+    margin-bottom: 2rem;
+}
+
+@media (max-width:767px) {
+    .main .container .text {
+        text-align: center;
+    }
+
+    .main .container .text a {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1rem 2rem;
+    }
+}
+
+.main .container .text a:hover {
+    background: linear-gradient(120deg, #18276478, #2f3cf483);
+}
+
+.main .container .text a i {
+    margin-right: .5rem;
+}
 
 .main .container .side-image {
     flex: 1;
@@ -301,6 +349,7 @@ header .container nav .list-icon {
 @media (max-width:767px) {
     .main .container .side-image {
         order: -1;
+        margin-top: 25px;
     }
 }
 
