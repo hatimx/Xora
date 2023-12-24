@@ -77,7 +77,61 @@ a {
 }
 
 /* End Global Rules */
+/* Start Component */
+.header-text {
+    text-align: center;
+    position: relative;
+    margin-bottom: 4rem;
+}
 
+.header-text h2 {
+    color: var(--white-color);
+    font-size: 2.5rem;
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.header-text h2::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--parag-color);
+    left: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-text h2::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--parag-color);
+    right: -15%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-text p {
+    color: var(--parag-color);
+    position: relative;
+    top: 3px;
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .header-text h2 {
+        color: var(--white-color);
+        font-size: 1.8rem;
+    }
+}
+
+/* End Component */
 /* Start Header */
 header {
     position: absolute;
@@ -89,6 +143,7 @@ header {
 
 header .container {
     position: relative;
+    max-height: 100vh;
 }
 
 header .container nav {
@@ -244,7 +299,8 @@ header .container nav .list-icon {
 /* Start Main */
 .main {
     padding-top: var(--section-padding);
-    min-height: 100vh;
+    padding-bottom: var(--section-padding);
+    height: max-content;
     width: 100%;
     background: linear-gradient(140deg, var(--bg-color), #101A4F);
 }
@@ -386,3 +442,126 @@ header .container nav .list-icon {
 }
 
 /* End Main */
+/* Start Features */
+.features {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    margin-top: -1px;
+    width: 100%;
+    background: linear-gradient(40deg, #080D27, #101A4F);
+}
+
+.features .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 2rem;
+}
+
+@media (max-width: 767px) {
+    .features .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.features .container .left,
+.features .container .right {
+    flex: 1;
+    padding: 2rem 2rem 0;
+    box-shadow: 0 0px 55px #080d27;
+}
+
+.features .container .left,
+.features .container .right {
+    border: .1px solid #f3f3f310;
+    border-radius: 1.5rem;
+}
+
+.features .container .left .icon,
+.features .container .right .icon {
+    margin-bottom: 2rem;
+}
+
+.features .container .left .icon i,
+.features .container .right .icon i {
+    font-size: 4rem;
+    color: var(--white-color);
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    padding: .5rem;
+}
+
+
+.features .container .left .text strong,
+.features .container .right .text strong {
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--text-color);
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.features .container .left .text h2,
+.features .container .right .text h2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    letter-spacing: -1px;
+    color: var(--white-color);
+    line-height: 1.2;
+    margin: 0 0 2rem;
+}
+
+.features .container .left .text p,
+.features .container .right .text p {
+    font-size: 1.1rem;
+    color: var(--parag-color);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    .features .container .left .text p,
+    .features .container .right .text p {
+        font-size: .800rem;
+
+    }
+}
+
+.features .container .left .text a,
+.features .container .right .text a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    width: fit-content;
+    color: var(--white-color);
+    background: linear-gradient(145deg, #182764, #2F3CF4);
+    padding: 1rem 2.5rem;
+    border-radius: .5rem;
+    transition: .5s;
+    box-shadow: 0 0px 50px rgba(255, 255, 255, 0.15);
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .features .container .left .text a,
+    .features .container .right .text a {
+        width: 100%;
+        padding: 1rem 0rem;
+    }
+}
+
+.features .container .left .text a i {}
+
+
+
+/* Start Features */
