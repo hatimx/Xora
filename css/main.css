@@ -321,6 +321,7 @@ header .container nav .list-icon {
     border-radius: .5rem;
     transition: .5s ease;
     margin-bottom: 2rem;
+    font-size: 1.1rem;
 }
 
 @media (max-width:767px) {
@@ -341,7 +342,8 @@ header .container nav .list-icon {
 }
 
 .main .container .text a i {
-    margin-right: .5rem;
+    margin-right: 1.5rem;
+    color: var(--white-color);
 }
 
 .main .container .side-image {
