@@ -141,6 +141,10 @@ header {
     padding: 2rem 0 0 0;
 }
 
+header #toggler {
+    display: none;
+}
+
 header .container {
     position: relative;
     max-height: 100vh;
@@ -236,7 +240,7 @@ header .container nav .list-icon {
         position: relative;
     }
 
-    header .container nav .list-icon:hover::after {
+    header .container nav #toggler:checked~.list-icon::after {
         content: "";
         position: absolute;
         border-style: solid;
@@ -247,7 +251,7 @@ header .container nav .list-icon {
         z-index: 5;
     }
 
-    header .container nav .list-icon:hover~ul {
+    header .container nav #toggler:checked~ul {
         display: block;
         position: absolute;
         padding: 0;
@@ -258,6 +262,19 @@ header .container nav .list-icon {
         z-index: 5;
         right: 12px;
         left: 0;
+    }
+
+    header .container nav .list-icon:hover~ul {
+        /* display: block;
+        position: absolute;
+        padding: 0;
+        font-size: 1.1rem;
+        max-width: 100%;
+        width: 100%;
+        background-color: rgb(0, 0, 0, .5);
+        z-index: 5;
+        right: 12px;
+        left: 0; */
     }
 
     header .container nav .left-links {
