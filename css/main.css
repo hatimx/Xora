@@ -264,19 +264,6 @@ header .container nav .list-icon {
         left: 0;
     }
 
-    header .container nav .list-icon:hover~ul {
-        /* display: block;
-        position: absolute;
-        padding: 0;
-        font-size: 1.1rem;
-        max-width: 100%;
-        width: 100%;
-        background-color: rgb(0, 0, 0, .5);
-        z-index: 5;
-        right: 12px;
-        left: 0; */
-    }
-
     header .container nav .left-links {
         top: 100%;
         border-top-left-radius: .75rem;
