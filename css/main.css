@@ -575,18 +575,16 @@ header .container nav .list-icon {
     padding: 2rem 0;
 }
 
-@media (min-width:992px) {
+@media (min-width:768px) {
 
 
     .features .two {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .features .two .card:not(:first-child) {
         border-left: 1px solid var(--btn-color);
     }
-
-
 }
 
 .features .two .card {
