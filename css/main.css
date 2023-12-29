@@ -46,8 +46,6 @@ a {
 @media (min-width:768px) {
     .container {
         width: 750px;
-        background-color: red;
-
     }
 }
 
@@ -55,7 +53,6 @@ a {
 @media (min-width:992px) {
     .container {
         width: 970px;
-
     }
 
     html {
@@ -135,20 +132,13 @@ header {
     padding: 2rem 0 0 0;
 }
 
-@media (max-width:992px) {
-
-    html {
-        /* font-size: 55%; */
-    }
-}
-
 header #toggler {
     display: none;
 }
 
 header .container {
     position: relative;
-    max-height: 100vh;
+    /* max-height: 100vh; */
 }
 
 header .container nav {
@@ -205,12 +195,14 @@ header .container nav ul li a {
 header .container nav .logo {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .5rem;
     font-size: 2.5rem;
     font-weight: 800;
-    padding: .5rem 4rem;
-    margin: 0 8rem;
+    /* padding: .5rem 4rem; */
+    /* margin: 0 8rem; */
     color: white;
+    flex: 1;
 }
 
 @media (min-width: 768px) and (max-width: 1011px) {
