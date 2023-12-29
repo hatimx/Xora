@@ -47,10 +47,6 @@ a {
     .container {
         width: 750px;
     }
-
-    html {
-        font-size: 55%;
-    }
 }
 
 /* Medium */
@@ -59,15 +55,16 @@ a {
         width: 970px;
     }
 
-    /* html {
+    html {
         font-size: 90%;
-    } */
+    }
 }
 
 /* Large */
 @media (min-width:1200px) {
     .container {
         width: 1170px;
+        background-color: red;
     }
 }
 
