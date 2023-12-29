@@ -352,7 +352,7 @@ header .container nav .list-icon {
 }
 
 .main .container .text h1 {
-    font-size: 5.5rem;
+    font-size: 5rem;
     font-weight: bolder;
     letter-spacing: -1px;
     color: var(--white-color);
@@ -363,6 +363,12 @@ header .container nav .list-icon {
 @media (max-width:767px) {
     .main .container .text h1 {
         font-size: 2rem;
+    }
+}
+
+@media (max-width:991px) {
+    .main .container .text h1 {
+        font-size: 3rem;
     }
 }
 
