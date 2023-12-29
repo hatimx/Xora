@@ -365,7 +365,7 @@ header .container nav .list-icon {
     margin: 0 0 2rem;
 }
 
-@media (max-width:767px) {
+@media (max-width:991px) {
     .main .container .text h1 {
         font-size: 2rem;
     }
